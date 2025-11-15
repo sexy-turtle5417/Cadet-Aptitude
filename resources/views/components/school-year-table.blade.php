@@ -7,7 +7,7 @@
                  <th>Description</th>
                  <th>Start</th>
                  <th>End</th>
-                 <th>Actions</th>
+                 {{-- <th>Actions</th> --}}
              </tr>
          <tbody>
              {{ $slot }}

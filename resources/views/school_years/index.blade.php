@@ -1,10 +1,10 @@
 <x-document>
     <x-navbar></x-navbar>
     <div class="grid place-items-center">
-        <div class="w-3/4 pb-10 mt-10">
+        <div class=" pb-10 mt-10">
             <x-school-year-table>
                 @foreach ($schoolYears as $index => $schoolYear)
-                    <x-school-year-row no="{{ $schoolYear->id }}" :schoolYear="$schoolYear">
+                    <x-school-year-row no="{{ $schoolYears->firstItem() + $index }}" :schoolYear="$schoolYear">
                     </x-school-year-row>
                 @endforeach
             </x-school-year-table>
