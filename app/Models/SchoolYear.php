@@ -9,4 +9,10 @@ class SchoolYear extends Model
 {
     //
     use HasFactory;
+    protected $fillable = [
+        "nick_name",
+        "description",
+        "start_date",
+        "end_date"
+    ];
 }
